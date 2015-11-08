@@ -1,0 +1,343 @@
+{
+    "createMapping": {
+        "org": {
+            "CreateMappingRequest": {
+                "SubscriberId": "homeless_ppls_org@mastercard.com",
+                "SubscriberType": "EMAIL_ADDRESS",
+                "AccountUsage":  "SEND_RECV",
+                "DefaultIndicator": "T",
+                "Alias": "Homeless org Card",
+                "ICA": "009674",
+                "AccountNumber": 5184680430000006,
+                "ExpiryDate": "201909",
+                "CardholderFullName": {
+                    "CardholderFirstName": "Homeless",
+                    "CardholderMiddleName": "O",
+                    "CardholderLastName": "Ppl"
+                },
+                "Address": {
+                    "Line1": "123 Main Street",
+                    "Line2": "#5A",
+                    "City": "OFallon",
+                    "CountrySubdivision": "MO",
+                    "PostalCode": "63368",
+                    "Country": "USA"
+                },
+                "DateOfBirth": "19460102"
+            }
+        },
+        "sender": {
+            "CreateMappingRequest": {
+                "SubscriberId": "homeless_ppls_helper@mastercard.com",
+                "SubscriberType": "EMAIL_ADDRESS",
+                "AccountUsage":  "SENDING",
+                "DefaultIndicator": "T",
+                "Alias": "Homeless help Card",
+                "ICA": "009674",
+                "AccountNumber": 5184680430000006,
+                "ExpiryDate": "201909",
+                "CardholderFullName": {
+                    "CardholderFirstName": "Homeless",
+                    "CardholderMiddleName": "S",
+                    "CardholderLastName": "Ppl"
+                },
+                "Address": {
+                    "Line1": "123 Main Street",
+                    "Line2": "#5A",
+                    "City": "OFallon",
+                    "CountrySubdivision": "MO",
+                    "PostalCode": "63368",
+                    "Country": "USA"
+                },
+                "DateOfBirth": "19460102"
+            }
+        },
+        "reciever": {
+            "CreateMappingRequest": {
+                "SubscriberId": "",
+                "SubscriberType": "EMAIL_ADDRESS",
+                "AccountUsage":  "RECEIVING",
+                "DefaultIndicator": "T",
+                "Alias": "",
+                "ICA": "009674",
+                "AccountNumber": 5184680430000006,
+                "ExpiryDate": "201909",
+                "CardholderFullName": {
+                    "CardholderFirstName": "Homeless",
+                    "CardholderMiddleName": "R",
+                    "CardholderLastName": "Ppl"
+                },
+                "Address": {
+                    "Line1": "123 Main Street",
+                    "Line2": "#5A",
+                    "City": "OFallon",
+                    "CountrySubdivision": "MO",
+                    "PostalCode": "63368",
+                    "Country": "USA"
+                },
+                "DateOfBirth": "19460102"
+            }
+        }
+    },
+    "enquire": {
+        "org" : {
+            "InquireMappingRequest": {
+                "SubscriberId": "homeless_ppls_org@mastercard.com",
+                "SubscriberType": "EMAIL_ADDRESS",
+                "AccountUsage": "SEND_RECV",
+                "Alias": "Homeless org Card",
+                "DataResponseFlag": "3"
+            }
+        },
+        "sender": {
+            "InquireMappingRequest": {
+                "SubscriberId": "homeless_ppls_helper@mastercard.com",
+                "SubscriberType": "EMAIL_ADDRESS",
+                "AccountUsage": "SENDING",
+                "Alias": "Homeless help Card",
+                "DataResponseFlag": "3"
+            }
+        },
+        "reciever": {
+            "InquireMappingRequest": {
+                "SubscriberId": "",
+                "SubscriberType": "EMAIL_ADDRESS",
+                "AccountUsage": "RECEIVING",
+                "Alias": "",
+                "DataResponseFlag": "3"
+            }
+        }
+    },
+    "moneysend": {
+        "receiveFrom": {
+            "FundingRequest": {
+                "LocalDate": [
+                    "1101"
+                ],
+                "LocalTime": [
+                    "161222"
+                ],
+                "TransactionReference": [],
+                "FundingMapped": [
+                    {
+                        "SubscriberId": [],
+                        "SubscriberType": [
+                            "EMAIL_ADDRESS"
+                        ],
+                        "SubscriberAlias": []
+                    }
+                ],
+                "ReceivingMapped": [
+                    {
+                        "SubscriberId": [
+                            "homeless_ppls_org@mastercard.com"
+                        ],
+                        "SubscriberType": [
+                            "EMAIL_ADDRESS"
+                        ],
+                        "SubscriberAlias": [
+                            "Homeless org Card"
+                        ]
+                    }
+                ],
+                "FundingUCAF": [
+                    "MjBjaGFyYWN0ZXJqdW5rVUNBRjU=1111"
+                ],
+                "FundingMasterCardAssignedId": [
+                    "123456"
+                ],
+                "FundingAmount": [
+                    {
+                        "Value": [],
+                        "Currency": [
+                            "840"
+                        ]
+                    }
+                ],
+                "ReceiverName": [
+                    "JoseLopez"
+                ],
+                "ReceiverAddress": [
+                    {
+                        "Line1": [
+                            "PuebloStreet"
+                        ],
+                        "Line2": [
+                            "POBOX12"
+                        ],
+                        "City": [
+                            "ElPASO"
+                        ],
+                        "CountrySubdivision": [
+                            "TX"
+                        ],
+                        "PostalCode": [
+                            "79906"
+                        ],
+                        "Country": [
+                            "USA"
+                        ]
+                    }
+                ],
+                "ReceiverPhone": [
+                    "1800639426"
+                ],
+                "Channel": [
+                    "W"
+                ],
+                "UCAFSupport": [
+                    "true"
+                ],
+                "ICA": [
+                    "009674"
+                ],
+                "ProcessorId": [
+                    "9000000442"
+                ],
+                "RoutingAndTransitNumber": [
+                    "990442082"
+                ],
+                "CardAcceptor": [
+                    {
+                        "Name": [
+                            "MyLocalBank"
+                        ],
+                        "City": [
+                            "SaintLouis"
+                        ],
+                        "State": [
+                            "MO"
+                        ],
+                        "PostalCode": [
+                            "63101"
+                        ],
+                        "Country": [
+                            "USA"
+                        ]
+                    }
+                ],
+                "TransactionDesc": [
+                    "A2A"
+                ],
+                "MerchantId": [
+                    "123456"
+                ]
+            }
+        },
+        "senderTo": {
+            "FundingRequest": {
+                "LocalDate": [
+                    "1101"
+                ],
+                "LocalTime": [
+                    "161222"
+                ],
+                "TransactionReference": [],
+                "FundingMapped": [
+                    {
+                        "SubscriberId": [
+                            "homeless_ppls_org@mastercard.com"
+                        ],
+                        "SubscriberType": [
+                            "EMAIL_ADDRESS"
+                        ],
+                        "SubscriberAlias": [
+                            "Homeless org Card"
+                        ]
+                    }
+                ],
+                "ReceivingMapped": [
+                    {
+                        "SubscriberId": [],
+                        "SubscriberType": [
+                            "EMAIL_ADDRESS"
+                        ],
+                        "SubscriberAlias": []
+                    }
+                ],
+                "FundingUCAF": [
+                    "MjBjaGFyYWN0ZXJqdW5rVUNBRjU=1111"
+                ],
+                "FundingMasterCardAssignedId": [
+                    "123456"
+                ],
+                "FundingAmount": [
+                    {
+                        "Value": [],
+                        "Currency": [
+                            "840"
+                        ]
+                    }
+                ],
+                "ReceiverName": [
+                    "JoseLopez"
+                ],
+                "ReceiverAddress": [
+                    {
+                        "Line1": [
+                            "PuebloStreet"
+                        ],
+                        "Line2": [
+                            "POBOX12"
+                        ],
+                        "City": [
+                            "ElPASO"
+                        ],
+                        "CountrySubdivision": [
+                            "TX"
+                        ],
+                        "PostalCode": [
+                            "79906"
+                        ],
+                        "Country": [
+                            "USA"
+                        ]
+                    }
+                ],
+                "ReceiverPhone": [
+                    "1800639426"
+                ],
+                "Channel": [
+                    "W"
+                ],
+                "UCAFSupport": [
+                    "true"
+                ],
+                "ICA": [
+                    "009674"
+                ],
+                "ProcessorId": [
+                    "9000000442"
+                ],
+                "RoutingAndTransitNumber": [
+                    "990442082"
+                ],
+                "CardAcceptor": [
+                    {
+                        "Name": [
+                            "MyLocalBank"
+                        ],
+                        "City": [
+                            "SaintLouis"
+                        ],
+                        "State": [
+                            "MO"
+                        ],
+                        "PostalCode": [
+                            "63101"
+                        ],
+                        "Country": [
+                            "USA"
+                        ]
+                    }
+                ],
+                "TransactionDesc": [
+                    "A2A"
+                ],
+                "MerchantId": [
+                    "123456"
+                ]
+            }
+        }
+    }
+}
