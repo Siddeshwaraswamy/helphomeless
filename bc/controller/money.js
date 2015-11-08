@@ -222,7 +222,8 @@ createUser = function (req, res) {
             "SubscriberAlias": SubscriberAlias,
             "totalMoney": 0,
             "otherUserDetails": otherUserDetails,
-            moneyRecievedFrom:[]
+            "moneyRecievedFrom":[],
+            "merchant":[]
         };
         db.push("/homelessppl/" + SubscriberId, tempUserObj);
         res.send(JSON.stringify({"meta": {"status": "success"}, "data": result}));
